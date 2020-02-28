@@ -69,14 +69,14 @@ begin_time = datetime.datetime.now()
 with open('10m.txt', 'r') as fp:
     numbers = [int(line) for line in fp.readlines()]
 
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+print("Median:", quickselect_median(numbers))
+print("Average:", f'{mean(numbers):.2f}')
 longest = longest_sequence(numbers)
 print("Increasing seq length:", longest[0], "(Starts at", longest[1], "string)")
 longest = longest_sequence(numbers, predicate=more_than)
 print("Decreasing seq length:", longest[0], "(Starts at", longest[1], "string)")
-print("Average:", mean(numbers))
-print("Minimum:", min(numbers))
-print("Maximum:", max(numbers))
-print("Median:", quickselect_median(numbers))
 
 end_time = datetime.datetime.now()
 print("\nTime elapsed: ", (end_time - begin_time).seconds, 's', sep='')
