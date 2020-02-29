@@ -11,7 +11,6 @@ def quickselect_median(l, pivot_fn=random.choice):
         return 0.5 * (quickselect(l, len(l) // 2 - 1, pivot_fn) +
                       quickselect(l, len(l) // 2, pivot_fn))
 
-
 def quickselect(l, k, pivot_fn):
     """
     Выбираем k-тый элемент в списке l (с нулевой базой)

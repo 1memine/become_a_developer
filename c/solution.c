@@ -44,7 +44,6 @@ int main()
             max = numbers[i];
         else if (min > numbers[i])
             min = numbers[i];
-
         if (numbers[(i - 1) % n] < numbers[i])
         {
             dec_seq_count = 1;
