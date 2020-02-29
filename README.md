@@ -8,4 +8,4 @@ cd become_a_developer
 ./run
 ```
 # Screenshot
-!![](screenshot.png)
+![](screenshot.png)
