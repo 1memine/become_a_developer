@@ -1,5 +1,5 @@
-# Test task for PortaOne BaD
-See task.txt for details
+# Description
+Test task for PortaOne BaD. See task.txt for details
 
 # Usage
 ```bash
